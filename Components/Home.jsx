@@ -1,6 +1,10 @@
 import React from 'react';
 import "./home.css";
 import Nav from './Nav';
+import img1 from './images/img1.png';
+import img2 from "./images/img2.png" ;
+import img3 from "./images/img3.png";
+import img4 from "./images/img4.png";
 
 const Home = () => {
     return (
@@ -13,13 +17,13 @@ const Home = () => {
                 <p className="lead">Welcome to our website! This versatile platform is designed to cater to various users, including admins, candidates, and employees. Whether you're a fresh job seeker eager to start your career or an HR professional managing employee details, our portal offers a seamless experience for all. Whether you're navigating through job listings or managing your team's HR needs, our commitment to reliability and efficiency remains unwavering. </p>
             </div>
             <div className="col-md-6 order-md-2 text-center">
-                <img src="./images/img1.png" className="img-fluid rounded" alt="User login illustration" />
+                <img src={img1} className="img-fluid rounded" alt="User login illustration" />
             </div>
         </div>
         
         <div className="row align-items-center p-3">
             <div className="col-md-6 text-center">
-                <img src="./images/img2.png" className="img-fluid rounded" alt="Job search illustration"/>
+                <img src={img2} className="img-fluid rounded" alt="Job search illustration"/>
             </div>
             <div className="col-md-6">
                 <p className="lead">For job seekers, you can easily register or log in to explore and apply for jobs that match your interests and qualifications. Our job portal features listings across various categories, making it simple to find opportunities that align with your career goals.Whether you're a job seeker or an HR professional, our portal is designed to meet your needs efficiently. We continuously strive to enhance our platform, incorporating feedback from our diverse user base to deliver a seamless experience. </p>
@@ -31,13 +35,13 @@ const Home = () => {
                 <p className="lead">For HR professionals, our platform provides a robust management dashboard. Here, you can efficiently handle employee details, oversee performance, and manage various HR tasks. The admin section allows for comprehensive system management, including user account oversight and job posting management. Together, let's unlock new opportunities and empower your career ambitions with cutting-edge technology and personalized service.</p>
             </div>
             <div className="col-md-6 order-md-2 text-center">
-                <img src="./images/img3.png" className="img-fluid rounded" alt="HR dashboard illustration"/>
+                <img src={img3} className="img-fluid rounded" alt="HR dashboard illustration"/>
             </div>
         </div>
         
         <div className="row align-items-center p-3">
             <div className="col-md-6 text-center">
-                <img src="./images/img4.png" className="img-fluid rounded" alt="Secure login illustration"/>
+                <img src={img4} className="img-fluid rounded" alt="Secure login illustration"/>
             </div>
             <div className="col-md-6">
                 <p className="lead">Designed with a user-friendly interface and secure login system, our website ensures smooth navigation and data protection. Thank you for choosing our platform to support your job search or HR management needs. We are committed to helping you achieve your objectives efficiently and effectively. Join us in shaping the future of career management and discover why thousands of users trust us to support their professional journeys. </p>
