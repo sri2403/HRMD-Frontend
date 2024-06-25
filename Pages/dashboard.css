@@ -1,0 +1,57 @@
+/* styles.css */
+.container-fluid {
+    padding: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    margin-top: 20px;
+}
+
+/* General styles for the sidebar and main content */
+#sidebar {
+    height: 100vh;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* Media query for screens smaller than 780px */
+@media (max-width: 780px) {
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto; /* Ensure the table can be scrolled horizontally */
+    }
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn {
+        flex: 1;
+        margin: 5px;
+    }
+}
+
+
+ 
