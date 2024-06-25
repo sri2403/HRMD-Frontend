@@ -8,7 +8,6 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../Context/AuthContext';
-import CandResetPassword from '../Cportal/CandResetPassword';
 
 const CandidatePortal = () => {
     const { candidateToken } = useContext(AuthContext);
@@ -57,9 +56,7 @@ const CandidatePortal = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to={`/candidatePortal/${id}/editDetails`}>Edit-details</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to={`/candidatePortal/${id}/resetPassword`}>Reset-password</Link>
-                            </li>
+                            
                         </ul>
                         <ul className="navbar-nav">
                             <li className="nav-item">
@@ -75,7 +72,7 @@ const CandidatePortal = () => {
                     <Route path="/personalDetails" element={<PersonalDetailsCand />} />
                     <Route path="/jobPosts" element={<Jobposts candidateId={id} />} />
                     <Route path="/editDetails" element={<EditDetailsCand/>} />
-                    <Route path="/resetPassword" element={<CandResetPassword candidateId={id} candidateToken={candidateToken}/>} />
+                    
                 </Routes>
             </main>
         </div>

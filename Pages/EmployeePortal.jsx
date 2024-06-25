@@ -59,7 +59,7 @@ const EmployeePortal = () => {
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to={`/employeePortal/${id}/editDetails`}>Edit-details</Link>
-                                    </li>
+                                    </li>                 
                                 </ul>
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
@@ -76,6 +76,7 @@ const EmployeePortal = () => {
                             <Route path="/leaveApplication" element={<LeaveApplication />} />
                             <Route path="/attendance" element={<EmployeeAttendance />} />
                             <Route path="/editDetails" element={<EmpDetailsEdit />} />
+
                         </Routes>
                     </main>
                 </div>
