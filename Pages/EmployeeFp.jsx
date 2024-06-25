@@ -31,7 +31,7 @@ const EmployeeFp = () => {
                 <div className='row justify-content-center'>
                     <div className='col-md-6'>
                         <div className='card'>
-                            <h5 className='card-header text-center bg-success text-white'>Admin Forgot-password</h5>
+                            <h5 className='card-header text-center bg-success text-white'>Employee Forgot-password</h5>
                             <div className='card-body'>
                                 <form onSubmit={handleSubmit}>
                                     <div className="mb-3">
