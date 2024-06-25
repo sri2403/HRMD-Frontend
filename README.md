@@ -18,5 +18,8 @@ The employee portal allows viewing and updating of personal details, facilitates
 ## Admin Dashboard
 The admin panel facilitates CRUD operations for employees, monitors attendance, manages leave requests, processes employee payments, provides feedback, creates job posts, conducts performance evaluations, and oversees recruitment by tracking candidate applications.
 
-## Bacakend Link
+## Backend Link
 Go to=>https://github.com/sri2403/HRMD-Backend.git
+
+## Netlify Link
+Go to=>https://hrmd-frontend-sri2403.netlify.app/
