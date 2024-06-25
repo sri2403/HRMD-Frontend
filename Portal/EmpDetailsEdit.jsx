@@ -1,5 +1,5 @@
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const EmpDetailsEdit = () => {
     const { id } = useParams();
     const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const [dob, setDob] = useState('');
     const [gender, setGender] = useState('');
@@ -26,19 +27,7 @@ const EmpDetailsEdit = () => {
     const fetchData = async () => {
         try {
             const res = await axios.get(`https://hrmd-backend.onrender.com/api/getEmployee/${id}`);
-            const {
-                username,
-                email,
-                dob,
-                gender,
-                city,
-                contact,
-                role,
-                degree,
-                department,
-                accountNumber,
-                salary,
-            } = res.data.result;
+            const {username,email,dob,gender,city,contact,role,degree,department,accountNumber,salary} = res.data.result;
             setUsername(username);
             setEmail(email);
             setDob(dob);
@@ -59,6 +48,7 @@ const EmpDetailsEdit = () => {
         e.preventDefault();
         const payload = {
             username,
+            password,
             email,
             dob,
             gender,
@@ -87,9 +77,9 @@ const EmpDetailsEdit = () => {
         <div className="container mt-4">
             <div className="card">
                 <div className="card-body">
-                    <h3 className="card-title">Update Employee</h3>
+                    <h3 className="card-title text-center">Update-details</h3>
                     <form onSubmit={handleSubmit}>
-                        <div className="row ">
+                        <div className="row">
                             <div className="col-md-6">
                                 <label htmlFor="username" className="form-label">
                                     Name
@@ -117,7 +107,19 @@ const EmpDetailsEdit = () => {
                                 />
                             </div>
                         </div>
-                        <div className="row ">
+                        <div className="row">
+                            <div className="col-md-6">
+                                <label htmlFor="password" className="form-label">
+                                    New Password (Only if you want to update,otherwise skip it)
+                                </label>
+                                <input
+                                    type="password"
+                                    className="form-control"
+                                    id="password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
+                            </div>
                             <div className="col-md-6">
                                 <label htmlFor="dob" className="form-label">
                                     DOB
@@ -131,6 +133,8 @@ const EmpDetailsEdit = () => {
                                     required
                                 />
                             </div>
+                        </div>
+                        <div className="row">
                             <div className="col-md-6">
                                 <label htmlFor="gender" className="form-label">
                                     Gender
@@ -144,8 +148,6 @@ const EmpDetailsEdit = () => {
                                     required
                                 />
                             </div>
-                        </div>
-                        <div className="row ">
                             <div className="col-md-6">
                                 <label htmlFor="city" className="form-label">
                                     City
@@ -159,6 +161,8 @@ const EmpDetailsEdit = () => {
                                     required
                                 />
                             </div>
+                        </div>
+                        <div className="row">
                             <div className="col-md-6">
                                 <label htmlFor="contact" className="form-label">
                                     Contact Number
@@ -172,8 +176,6 @@ const EmpDetailsEdit = () => {
                                     required
                                 />
                             </div>
-                        </div>
-                        <div className="row ">
                             <div className="col-md-6">
                                 <label htmlFor="role" className="form-label">
                                     Role
@@ -187,6 +189,8 @@ const EmpDetailsEdit = () => {
                                     required
                                 />
                             </div>
+                        </div>
+                        <div className="row">
                             <div className="col-md-6">
                                 <label htmlFor="degree" className="form-label">
                                     Degree
@@ -200,8 +204,6 @@ const EmpDetailsEdit = () => {
                                     required
                                 />
                             </div>
-                        </div>
-                        <div className="row">
                             <div className="col-md-6">
                                 <label htmlFor="department" className="form-label">
                                     Department
@@ -215,6 +217,8 @@ const EmpDetailsEdit = () => {
                                     required
                                 />
                             </div>
+                        </div>
+                        <div className="row">
                             <div className="col-md-6">
                                 <label htmlFor="accountNumber" className="form-label">
                                     Account Number
@@ -228,8 +232,6 @@ const EmpDetailsEdit = () => {
                                     required
                                 />
                             </div>
-                        </div>
-                        <div className="row ">
                             <div className="col-md-6">
                                 <label htmlFor="salary" className="form-label">
                                     Salary
