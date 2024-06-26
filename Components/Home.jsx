@@ -49,7 +49,7 @@ const Home = () => {
         </div>
         <div className="container py-4">
             <div className="about-section bg-light p-4 rounded shadow">
-                <h2 className='text-center ' >About Us</h2>
+                <h2 className='text-center text-black' >About Us</h2>
                 <p className="lead">Hello everyone! We are dedicated to revolutionizing the way individuals connect with job opportunities and manage their careers. Founded with a vision to streamline the job search process for both fresh graduates and seasoned professionals, our platform offers a comprehensive job portal where users can seamlessly explore, apply, and manage job applications across diverse industries. We pride ourselves on providing a user-friendly interface, ensuring that navigating through job listings and managing career profiles is intuitive and efficient. Our commitment extends beyond job seekers; we also offer robust HR management tools for businesses to oversee employee details and optimize workforce performance. Whether you're looking to start your career journey or seeking efficient HR solutions, here we are to support your aspirations with innovative technology and personalized service.</p>
             </div>
         </div>
