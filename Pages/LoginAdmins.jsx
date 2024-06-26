@@ -25,7 +25,7 @@ const LoginAdmins = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor='password'><h6>Password:</h6></label>
-                            <input type="password" className="form-control" name="password" placeholder="Enter your password" value={password} onChange={(e)=>setPassword(e.target.value)} required/>
+                            <input type="password" className="form-control" name="password" placeholder="Enter your password" value={password} onChange={(e)=>setPassword(e.target.value)} required />
                         </div>
                         <div className='text-center mt-2'>
                             <p><Link to="/admin-forgot-password " className='text-decoration-none'>Forgot Password?</Link></p>
