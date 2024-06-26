@@ -25,9 +25,9 @@ const RegEmployee = () => {
             salary: '',
         },
         validationSchema: Yup.object({
-            username: Yup.string().required('Required'),
-            email: Yup.string().email('Invalid email address').required('Required'),
-            password: Yup.string().min(6, 'Password must be at least 6 characters').required('Required'),
+            username: Yup.string().required('Username is required'),
+            email: Yup.string().email('Invalid email address').required('Email is required'),
+            password: Yup.string().min(6, 'Password must be at least 6 characters').required('Password is required'),
             dob: Yup.string().required('Date of birth is required'),
             gender: Yup.string().required('Gender is required'),
             city: Yup.string().required('City is required'),

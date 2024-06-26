@@ -10,7 +10,7 @@ const HomeCand = () => {
                         <div className="card-body">
                             <h2 className="card-title text-center mb-4">Welcome to the Candidate Portal!</h2>
                             <p className="card-text">
-                                Here, you can view and edit your personal details, as well as apply for jobs based on your skills.
+                                Here, you can view and edit your personal details, also update your password as well as apply for jobs based on your skills.
                             </p>
                         </div>
                     </div>

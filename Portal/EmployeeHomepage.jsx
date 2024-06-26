@@ -10,7 +10,7 @@ const EmployeeHomepage = () => {
                         Here, you'll find access to a range of features tailored to your needs.
                     </p>
                     <p className="card-text text-center">
-                        You can view and update your personal details, check your attendance records,
+                        You can view and update your personal details and password, submit your attendance records,
                         and conveniently apply for leave whenever necessary.
                     </p>
                     <p className="card-text text-center">
