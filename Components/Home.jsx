@@ -14,7 +14,12 @@ const Home = () => {
         
         <div className="row align-items-center p-3 ">
             <div className="col-md-6 order-md-1">
-                <p className="lead">Welcome to our website! This versatile platform is designed to cater to various users, including admins, candidates, and employees. Whether you're a fresh job seeker eager to start your career or an HR professional managing employee details, our portal offers a seamless experience for all. Whether you're navigating through job listings or managing your team's HR needs, our commitment to reliability and efficiency remains unwavering. </p>
+                <p className="lead">Welcome to our website! This versatile platform is designed to cater to various users, including admins, candidates, and employees. 
+                <ul>
+                <li>If you are a job candidate seeking new opportunities, please complete the registration form through the Candidate Registration section. This portal allows you to apply for jobs based on your skills and manage your personal details effectively.</li>
+<li>If you are an employee, please complete the registration form through the Employee Registration section. Once registered, you can access the Employee Portal to manage your profile, leave application and manage your Attendance.</li>
+<li>If you are an HR professional, please register using the Admin Registration form. This will grant you access to the Admin Dashboard, where you can manage employee records, leave applications, monitor attendance ,payrolls ,job postings, and oversee the recruitment process.</li>
+</ul> </p>
             </div>
             <div className="col-md-6 order-md-2 text-center">
                 <img src={img1} className="img-fluid rounded" alt="User login illustration" />
